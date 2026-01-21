@@ -20,7 +20,6 @@ Aplicação web simples para gerenciamento de usuários (CRUD), desenvolvida com
 - PHP 8+
 - Composer
 - MySQL
-- Node.js (opcional, caso queira ajustar assets)
 
 ## Como rodar o projeto
 1. Clone o repositório:
@@ -35,18 +34,21 @@ Aplicação web simples para gerenciamento de usuários (CRUD), desenvolvida com
 4. Crie o arquivo .env:
     cp .env.example .env
 
-5. Configure o banco de dados no arquivo .env:
+5. Crie um banco de dados no MySQL (o nome pode ser o que preferir).
+
+6. Configure o banco de dados no arquivo .env:
     DB_DATABASE=nome_do_banco
     DB_USERNAME=usuario
     DB_PASSWORD=senha
 
-6. Gere a key da aplicação:
+7. Gere a key da aplicação:
     php artisan key:generate
 
-7. Rode as migrations:
+8. Rode as migrations:
     php artisan migrate
 
-8. Inicie o servidor:
+9. Inicie o servidor:
     php artisan serve
-9. Acesse no navegador:
+    
+10. Acesse no navegador:
     http://127.0.0.1:8000/users
